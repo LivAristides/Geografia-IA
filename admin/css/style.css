@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap');
+  :root{
+    --primary: #0d6efd;
+    --purple: #8a2be2;
+    --dark: #21252f;
+    --body: #888;
+    --box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
+    --pink: #a434b7;
+    --white: #ffffff;
+  }
+
+  body{
+    font-family: Sora, "sans-serif";
+    line-height: 1.7;
+    color: var(--body);
+    font-size: 22px;
+  }
+
+  h1,h2,h3,h4,h5,
+    .display-4{
+color: var(--dark);
+font-weight: 700;
+
+    }
+    p{
+      font-size: 30px;
+      color: var(--body)
+      
+    }
+    span{
+      color: var(--purple);
+    }
+    
+    h6{
+      color: var(--purple)
+    }
+
+    a{
+      color: var(--dark);
+      text-decoration: none;
+    }
+
+    .hero{
+      background-image: url(../img/ia29.jpg);
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+      position: relative;
+      z-index: 2;
+    }
+    .hero::after{
+      content:"";
+      width: 100%;
+      height: 100%;
+      position: absolute ;
+      top: 0;
+      left: 0;
+      background-color: rgba(21, 20, 51, 0.6);
+      z-index: -1;
+    }
+
+    
+
+    .navbar .nav-link{
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .btn{
+      padding: 14px 18px;
+      border-width:2px ;
+      border-radius: 0;
+      color: var(--white);
+      background-color: var(--purple);
+    }
+
+
+    section{
+      padding-top: 120px;
+      padding-bottom: 120px;
+    }
+    
+    .card-effect{
+      box-shadow: var(--box-shadow);
+      background-color: #fff;
+      padding: 25px;
+      transition: all 0.35s ease;
+  }
+  
+  .card-effect:hover{
+     box-shadow: none;
+     transform: translateY(5px); 
+  }
+  
+  .iconbox{
+      width: 54px;
+      height: 54px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--purple);
+      color: white;
+      font-size: 32px;
+      flex: none;
+  }
+ 
+  .exemploTable{
+    width: 100%;
+    font-size: x-large;
+    text-align: center;
+}
+
+.exemploTable td, .exemploTable th {
+    border: 1px solid #000;
+    padding: 2%;
+    text-align: center;
+}
+
+.exemploTable tr:nth-child(even){
+    background-color: #165f43;
+
+}
+
+.exemploTable tr:hover{
+    background-color: #014635;
+}
+
+.exemploTable th{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: #32c78e;
+    color: aliceblue;
+}
